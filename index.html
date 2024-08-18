@@ -11,7 +11,20 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="Images/penguin_icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f4d12110de.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'rgba(164, 188, 70, 1)',
+                secondary: 'rgba(133, 160, 25, 1)'
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .bebas-neue-font {
             font-family: "Bebas Neue", sans-serif;
@@ -27,9 +40,9 @@
     <header class="bg-[#FFFBF0]">
 
         <!-- Navbar section -->
-        <nav class="flex justify-between items-center w-4/5 mx-auto pt-10 border">
-            <img class="w-1/4 border" src="icons/logo.png" alt="">
-            <ul class="flex gap-14 text-base font-medium border">
+        <nav class="flex justify-between items-center w-4/5 mx-auto pt-10 pb-12">
+            <img class="w-1/4" src="icons/logo.png" alt="">
+            <ul class="flex gap-14 text-base font-medium">
                 <li><a class="hover:text-[#A4BC46] delay-100" href="#">Home</a></li>
                 <li><a class="hover:text-[#A4BC46] delay-100" href="#">Product</a></li>
                 <li><a class="hover:text-[#A4BC46] delay-100" href="#">About us</a></li>
@@ -38,7 +51,19 @@
         </nav>
         <!-- Navbar section -->
 
-
+        <!-- Banner section -->
+        <section class="flex justify-between items-center w-4/5 mx-auto relative">
+            <div class="pt-10 pb-48">
+                <h1 class="bebas-neue-font font-medium text-7xl mb-2"><span class="text-[#FABE4C]">Be the Penguins</span> <br> <span class="text-[#363958]">of Winter</span></h1>
+                <p class="text-[#3E3E3E] text-sm mb-4">Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.</p>
+                <button class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+            </div>
+            <div class="w-[38%] absolute -top-7 right-36">
+                <img class="" src="Images/model.png" alt="">
+            </div>
+        </section>
+        <!-- Banner section -->
     </header>
     <main>
 
