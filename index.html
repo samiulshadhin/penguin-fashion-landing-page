@@ -15,16 +15,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: 'rgba(164, 188, 70, 1)',
-                secondary: 'rgba(133, 160, 25, 1)'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgba(164, 188, 70, 1)',
+                        secondary: 'rgba(133, 160, 25, 1)',
+                        navyblue: '#363958',
+                        orange: '#FABE4C'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
         .bebas-neue-font {
             font-family: "Bebas Neue", sans-serif;
@@ -52,12 +54,15 @@
         <!-- Navbar section -->
 
         <!-- Banner section -->
-        <section class="flex justify-between items-center w-4/5 mx-auto relative">
+        <section class="flex justify-between items-center w-4/5 mx-auto relative mb-12">
             <div class="pt-10 pb-48">
-                <h1 class="bebas-neue-font font-medium text-7xl mb-2"><span class="text-[#FABE4C]">Be the Penguins</span> <br> <span class="text-[#363958]">of Winter</span></h1>
+                <h1 class="bebas-neue-font font-medium text-7xl mb-2"><span class="text-orange">Be the
+                        Penguins</span> <br> <span class="text-navyblue">of Winter</span></h1>
                 <p class="text-[#3E3E3E] text-sm mb-4">Lorem Ipsum is simply dummy text of the printing <br>
                     and typesetting industry.</p>
-                <button class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                <button
+                    class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                        class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
             </div>
             <div class="w-[38%] absolute -top-7 right-36">
                 <img class="" src="Images/model.png" alt="">
@@ -65,8 +70,127 @@
         </section>
         <!-- Banner section -->
     </header>
-    <main>
+    <main class="w-4/5 mx-auto">
 
+        <!-- Woman Jacket section -->
+        <section class="mb-28">
+            <h1 class="bebas-neue-font text-5xl text-navyblue font-normal mb-10">WOMAN Jacket</h1>
+
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Card 01 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-1.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Yellow Coat Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Brighten up your wardrobe with our vibrant Yellow Coat Jacket.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$234</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-2.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Ladies Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Our vibrant Ladies Jacket will brighten up your wardrobe.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$220</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-3.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Woman Leather Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Make your wardrobe pop with our vibrant Woman Leather Jacket.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$259</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Woman Jacket section -->
+
+        <!-- Man Jacket section -->
+        <section class="mb-28">
+            <h1 class="bebas-neue-font text-5xl text-navyblue font-normal mb-10">MAN Jacket</h1>
+
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Card 01 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-4.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Snowboard Mens Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Stay warm and stylish on the slopes with our Snowboard Men's Jacket.</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$250</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-5.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Man Leather Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Enjoy the slopes in style and warmth wearing the Leather Jacket.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$285</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="bg-white drop-shadow-xl p-5 rounded-2xl">
+                    <div>
+                        <img class="bg-[#F1F1F1] rounded-2xl p-5 mb-4" src="Images/jacket-6.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl mb-2">Man Casual Jacket</h1>
+                        <p class="text-[#3E3E3E] text-sm">Keeping you warm and looking stylish on the slopes is our Man Casual Jacket.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <h1 class="text-4xl font-black text-orange">$242</h1>
+                        <button
+                            class="bg-gradient-to-b from-primary to-secondary px-8 py-3 rounded-xl text-white font-medium"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Man Jacket section -->
     </main>
     <footer>
 
